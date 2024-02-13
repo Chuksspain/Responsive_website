@@ -75,13 +75,161 @@
 
  .main-headie {
      background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../image/essence.jpg');
-     margin-bottom: 5px;
      display: flex;
      flex-direction: column;
      height: 100vh;
      position: relative;
      background-size: cover;
      padding-top: 20px;
+ }
+
+ .app-section {
+     background-color: rgb(209, 205, 205);
+     text-align: center;
+     font-weight: bold;
+ }
+
+ .section-hero {
+     height: 100vh;
+     line-height: 1;
+     font-weight: 400;
+     background-color: #efeade;
+     padding: 30px 0;
+ }
+
+ .as-wrap {
+     display: grid;
+     grid-template-columns: 50px 250px 1fr 150px;
+     grid-template-rows: 50px 1fr;
+     height: 100vh;
+ }
+
+ .hero-wrap {
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     max-width: 80rem;
+     align-items: center;
+     gap: 96px;
+ }
+
+ .hero-img img {
+     width: 80%;
+ }
+
+ .hero-btn:link,
+ .hero-btn:visited {
+     display: inline-block;
+     margin-left: 0;
+     padding: 16px 28px;
+     font-size: 14px;
+     /* background-color: #e67e22; */
+     border-radius: 9px;
+     font-weight: 450;
+     transition: all 0.5s;
+
+ }
+
+ .hero-description {
+     font-size: 16px;
+     line-height: 1.5;
+     margin-bottom: 30px;
+ }
+
+ .hero-full:link,
+ .hero-full:visited {
+     background-color: #e67e22;
+     color: #ffffff;
+ }
+
+ .hero-full:hover,
+ .hero-full:active {
+     background-color: white;
+     color: #e67e22;
+ }
+
+ .hero-outline:link,
+ .hero-outline:visited {
+     background-color: white;
+     color: #666;
+ }
+
+ .hero-outline:hover,
+ .hero-outline:active {
+     background-color: white;
+     color: #e67e22;
+ }
+
+ .app-section nav {
+     /* background-color: rgb(29, 8, 51); */
+     grid-row: 1/ -1;
+     padding-top: 20px;
+     /* color: #ffffff; */
+ }
+
+ .app-section menu {
+     display: flex;
+     align-items: center;
+     gap: 13px;
+     background-color: rgb(92, 91, 93);
+     color: white;
+     grid-column: 2/ -1;
+     padding: 0 30px;
+ }
+
+ .app-section aside {
+     /* background-color: blue; */
+     padding-top: 20px;
+     border-right: 3px solid rgb(92, 91, 93);
+ }
+
+ .as-div {
+     display: flex;
+     flex-direction: column;
+     gap: 30px;
+     /* background-color: yellowgreen; */
+     padding: 40px;
+     overflow: scroll;
+ }
+
+ .app-section main {
+     padding-top: 20px;
+     /* background-color: rgb(255, 255, 255); */
+     border-right: 3px solid rgb(92, 91, 93);
+ }
+
+ .as-btn {
+     display: inline-block;
+     font-size: 11px;
+     background-color: #e67e22;
+     border: none;
+     cursor: pointer;
+     color: #ffffff;
+     padding: 6px 10px;
+     font-weight: bold;
+ }
+
+ .as-btn:hover {
+     background-color: #ffffff;
+     color: #e67e22;
+ }
+
+ .as-btn:last-child {
+     background-color: rgb(249, 21, 21);
+     margin-left: auto;
+ }
+
+ .as-btn:last-child:hover {
+     background-color: #ffffff;
+     color: rgb(249, 21, 21);
+ }
+
+ .as-email {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     background-color: rgb(92, 91, 93);
+     height: 80px;
+     flex-shrink: 0;
  }
 
  .main-header span {
@@ -113,11 +261,22 @@
 
  .index-section {
      padding: 96px 0;
+     background-color: rgb(255, 255, 255);
+
+ }
+
+ .index-section span {
+     color: rgb(0, 0, 0);
+     line-height: 1.5;
+ }
+
+ .index-section h2 {
+     color: #e67e22;
  }
 
  .index-center {
      margin: 0 auto;
-     width: 800px;
+     width: 900px;
  }
 
  .crutial {
@@ -200,6 +359,7 @@
      /* border-top: 10px solid rgb(15, 175, 175); */
      position: relative;
      font-family: Rubik;
+     max-width: 100rem;
  }
 
  nav a,
@@ -604,15 +764,16 @@
  }
 
  .review-page {
-     margin: 80px auto;
-     width: 950px;
+     /* margin: 80px auto; */
      display: flex;
      justify-content: center;
+     padding-top: 100px;
+     padding-bottom: 100px;
+     background-color: rgb(205, 201, 201);
  }
 
  .review-wrap {
      background-color: rgb(5, 103, 65);
-     width: 900px;
      border-radius: 9px;
      color: white;
      padding: 30px;
@@ -642,7 +803,7 @@
      font-size: 15px;
      font-weight: bold;
      margin-bottom: 5px;
-     color: rgb(227, 239, 5);
+     color: #e67e22;
  }
 
  .review-job {
@@ -683,7 +844,8 @@
  .dotts {
      position: absolute;
      left: 50%;
-     bottom: 0;
+
+     bottom: -10%;
      transform: translate(-50%, 32px);
      display: flex;
      gap: 12px;
@@ -696,6 +858,7 @@
      border: 2px solid rgb(5, 103, 65);
      border-radius: 50%;
      cursor: pointer;
+     margin-top: 20px;
  }
 
  .fill {
@@ -871,4 +1034,40 @@
      align-items: center;
      gap: 15px;
      align-self: center;
+ }
+
+
+ .daily-faces img {
+     width: 40px;
+     height: 40px;
+     border-radius: 50%;
+     margin-right: -15px;
+     border: 3px solid #efeade;
+ }
+
+ .daily-faces img:last-child {
+     margin: 0;
+ }
+
+ .hero-text h2 {
+     color: #666;
+     font-size: 35px;
+     line-height: 1.05;
+     letter-spacing: -0.5px;
+     margin-bottom: 32px;
+ }
+
+ .daily-tips {
+     display: flex;
+     margin-top: 80px;
+     align-items: center;
+     gap: 15px;
+ }
+
+ .daily-faces {
+     display: flex;
+ }
+
+ .daily-tips p {
+     font-size: 18px;
  }
