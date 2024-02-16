@@ -106,14 +106,14 @@
 
  .hero-wrap {
      display: grid;
-     grid-template-columns: 1fr 1fr;
+     grid-template-columns: 1fr 300px;
      max-width: 80rem;
      align-items: center;
      gap: 96px;
  }
 
  .hero-img img {
-     width: 80%;
+     width: 100%;
  }
 
  .hero-btn:link,
@@ -130,7 +130,7 @@
  }
 
  .hero-description {
-     font-size: 16px;
+     font-size: 20px;
      line-height: 1.5;
      margin-bottom: 30px;
  }
@@ -1059,7 +1059,7 @@
 
  .daily-tips {
      display: flex;
-     margin-top: 80px;
+     margin-top: 30px;
      align-items: center;
      gap: 15px;
  }
@@ -1069,5 +1069,28 @@
  }
 
  .daily-tips p {
-     font-size: 18px;
+     font-size: 15px;
+ }
+
+ .daily-tips span {
+     color: #e67e22;
+     font-weight: 700;
+ }
+
+ .how-section {
+     display: flex;
+     flex-direction: row;
+     gap: 0;
+ }
+
+ .step-wrap {
+     width: 500px;
+ }
+
+ .how-wrap {
+     width: 300px;
+ }
+
+ .stepimg-wrap img {
+     width: 150px;
  }
