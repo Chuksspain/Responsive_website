@@ -1,0 +1,29 @@
+@media (max-width: 1200px) {
+
+    .section,
+    .main-headie {
+        max-width: 700px;
+    }
+}
+
+@media (max-width: 1000px) {
+
+    .section,
+    .main-headie {
+        max-width: 700px;
+    }
+}
+
+@media (max-width: 850px) {
+
+    .hero-wrap,
+    .rap {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section,
+    .main-headie {
+        max-width: 700px;
+    }
+}

@@ -4,12 +4,20 @@
      box-sizing: border-box;
  }
 
+ /* html {
+     font-size: 62.5%;
+ } */
+
  .pnav-wrap {
      display: flex;
      flex-direction: row;
      justify-content: space-between;
      margin-bottom: 60px;
      /* background-color: ; */
+     gap: 100px;
+     width: 100%;
+
+
  }
 
  .pnav-wrap a {
@@ -23,6 +31,18 @@
  .pnav-wrap span {
      color: rgb(255, 255, 255);
      font-size: 20px;
+ }
+
+ .menu-btn {
+     border: none;
+     background: none;
+     cursor: pointer;
+ }
+
+ .icon-mobile-nav {
+     height: 35px;
+     width: 35px;
+     color: #e67e22;
  }
 
  .container {
@@ -51,11 +71,12 @@
  }
 
  .header-center {
-     width: 400px;
-     position: absolute;
-     left: 69%;
-     top: 50%;
-     transform: translate(-50%, -50%);
+     max-width: 400px;
+     align-self: end;
+     margin-right: 16%;
+     /* left: 69%;
+     top: 50%; */
+     /* transform: translate(-50%, -50%); */
  }
 
  .headercenter-inner {
@@ -77,10 +98,14 @@
      background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../image/essence.jpg');
      display: flex;
      flex-direction: column;
-     height: 100vh;
-     position: relative;
+     /* height: 100vh; */
+     /* position: relative; */
      background-size: cover;
      padding-top: 20px;
+     padding-bottom: 100px;
+     gap: 100px;
+     width: 100%;
+     margin: 0;
  }
 
  .app-section {
@@ -90,11 +115,12 @@
  }
 
  .section-hero {
-     height: 100vh;
+     /* height: 100vh; */
      line-height: 1;
      font-weight: 400;
      background-color: #efeade;
      padding: 30px 0;
+     margin-bottom: 100px;
  }
 
  .as-wrap {
@@ -107,9 +133,9 @@
  .hero-wrap {
      display: grid;
      grid-template-columns: 1fr 300px;
-     max-width: 80rem;
+     width: 100%;
      align-items: center;
-     gap: 96px;
+     gap: 6px;
  }
 
  .hero-img img {
@@ -268,6 +294,7 @@
  .index-section span {
      color: rgb(0, 0, 0);
      line-height: 1.5;
+     width: 100%;
  }
 
  .index-section h2 {
@@ -276,7 +303,7 @@
 
  .index-center {
      margin: 0 auto;
-     width: 900px;
+     max-width: 900px;
  }
 
  .crutial {
@@ -1057,6 +1084,10 @@
      margin-bottom: 32px;
  }
 
+ .hero-text {
+     width: 60%;
+ }
+
  .daily-tips {
      display: flex;
      margin-top: 30px;
@@ -1097,10 +1128,17 @@
  .rap {
      display: flex;
      flex-direction: row;
+     gap: 200px;
  }
 
  .how-section {
-     padding: 70px 0;
+     padding: 70px 70px 70px 70px;
+     max-width: 1000px;
+     justify-self: center;
+ }
+
+ .step-wrap {
+     width: 600px;
  }
 
  .testi-gallery-wrap {
@@ -1110,6 +1148,11 @@
  }
 
  .testi-section {
+     padding: 30px 100px;
+     background-color: rgb(230, 229, 229);
+ }
+
+ footer {
      padding: 30px 100px;
  }
 
@@ -1131,13 +1174,23 @@
      margin-bottom: 12px;
  }
 
- .testimonial-text {
-     font-size: 12px;
-     line-height: 1.8;
-     margin-bottom: 16px;
+ .testimonial-text,
+ .copyright,
+ .contact,
+ {
+ font-size: 12px;
+ line-height: 1.8;
+ margin-bottom: 16px;
  }
 
- .testimonial-name {
+ .copyright,
+ .contact,
+ .footer-heading {
+     color: #ffffff;
+ }
+
+ .testimonial-name,
+ .footer-heading {
      font-size: 20px;
      color: #e67e22;
  }
@@ -1161,4 +1214,44 @@
      display: flex;
      flex-direction: column;
      gap: 8px;
+ }
+
+ footer {
+     background-color: black;
+ }
+
+ .footer-wrap {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+ }
+
+ .footer-logo img {
+     width: 30px;
+ }
+
+ .footer-wrap div {
+     width: 100px;
+ }
+
+ .footer-wrap nav {
+     width: 130px;
+ }
+
+ .contact a {
+     font-size: 13px;
+     margin: 0;
+     padding: 0;
+     color: #ffffff;
+ }
+
+ .footer-nav a {
+     font-size: 13px;
+     margin: 0;
+     padding: 0;
+     color: #ffffff;
+ }
+
+ .social-links img {
+     width: 20px;
  }

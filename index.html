@@ -5,15 +5,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="js/script.js"></script>
     <title>Responsive Website</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="querries.css">
+
 </head>
 
 <body class="main-body">
+    <script type="module" src="https://cdn.jsdelivr.net/npm/ionicons@latest/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/ionicons@latest/dist/ionicons/ionicons.js"></script>
     <!--
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error dolorum, illum quasi dignissimos quis amet dolor
         repellat nihil, quisquam vero quaerat vel obcaecati iste distinctio! Officia vero quo vel eos.
@@ -34,10 +39,14 @@
                 <a href="review.html">Review</a>
                 <a href="rico.html">Rico</a>
             </nav>
+            <button class="menu-btn">
+                <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+                <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+            </button>
         </div>
 
-        <div class="headercenter-inner">
-        </div>
+        <!-- <div class="headercenter-inner">
+        </div> -->
         <div class="header-center">
             <h2>You already, know that I strongly belive you can breakthrough this though life</h2>
             <p>Time is too slow for those who wait, too swift for those who fear, too long for those who grieve, too
@@ -122,12 +131,12 @@
     </section>
 
     <section class="how-section ">
-        <div class="how-wrap index-center">
+        <div class="how-wrap">
             <span>How It Works</span>
             <h2 class="heading-sec">Your Daily dose of Life in Three Simple Steps</h2>
         </div>
 
-        <div class="rap index-center">
+        <div class="rap">
             <div class="step-wrap">
                 <p class="step-num">01</p>
                 <h3 class="heading-t">State your likes and dislikes</h3>
@@ -140,7 +149,7 @@
                 <img src="./image/phone3.jpg" alt="">
             </div>
         </div>
-        <div class="rap index-center">
+        <div class="rap">
 
             <div class="stepping-wrap">
                 <img src="./image/phone1.png" alt="">
@@ -154,7 +163,7 @@
 
         </div>
 
-        <div class="rap index-center">
+        <div class="rap">
             <p class="step-description">Never again waste time thimking about how to live; CHUKSSPAIN AI will
                 create a super personalised weekly life plan just for you. CHUKSSPAIN AI makes sure you get all
                 the
@@ -263,12 +272,73 @@
         </div>
     </section>
     <footer>
-        <div class="footer-wrap">
-            <div class="logo">Logo</div>
-            <div class="address">Address</div>
-            <nav class="nav-col">Address</nav>
-            <nav class="nav-col">Address</nav>
-            <nav class="nav-col">Address</nav>
+        <div class="index-center">
+            <div class="footer-wrap">
+                <div class="logo">
+                    <a href="#" class="footer-logo">
+                        <img src="./image/logo1.jpg" alt="">
+                    </a>
+
+                    <ul class="social-links">
+                        <li>
+                            <a href="#">
+                                <img src="./image/logo2.png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./image/logo3 (2).png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./image/logo4.png" alt="">
+                            </a>
+                        </li>
+                    </ul>
+
+                    <p class="copyright">Copyright &copy; 2024 By Chuksspain, Inc. All rights reserved.</p>
+
+                </div>
+                <div class="address">
+
+                    <p class="footer-heading">Contact Us</p>
+                    <address class="contact">
+                        <p>Address: Odarawere Street, off NTA road> Mgbuoba Port Harcourt</p>
+                        <p>
+                            <a href="tel: 09026596055"> 09026596055</a>
+                            <a href="mailto: chuksspain@gmail.com"> chuksspain@gmail.com</a>
+                        </p>
+                    </address>
+
+                </div>
+                <nav class="nav-col">
+                    <p class="footer-heading">Accounts</p>
+                    <ul class="footer-nav">
+                        <li><a href="#">Create Account</a></li>
+                        <li><a href="#">Sign in</a></li>
+                        <li><a href="#">ios App</a></li>
+                        <li><a href="#">Andriod App</a></li>
+                    </ul>
+                </nav>
+                <nav class="nav-col">
+                    <p class="footer-heading">Company</p>
+                    <ul class="footer-nav">
+                        <li><a href="#">About Chuksspain</a></li>
+                        <li><a href="#">Reading Partner</a></li>
+                        <li><a href="#">Business</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </nav>
+                <nav class="nav-col">
+                    <p class="footer-heading">Resourses</p>
+                    <ul class="footer-nav">
+                        <li><a href="#">Reading Dictionary</a></li>
+                        <li><a href="#">Help centers</a></li>
+                        <li><a href="#">Privacy and Terms</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </footer>
 </body>
