@@ -4,3 +4,9 @@ console.log(myName);
 const h2 = document.querySelector(".crutial");
 console.log(h2);
 h2.textContent = myName;
+const btnNavEL = document.querySelector(".menu-btn");
+const headerEL = document.querySelector(".header");
+btnNavEL.addEventListener('click', function () {
+    headerEL.classList.toggle("nav-open")
+})
+
