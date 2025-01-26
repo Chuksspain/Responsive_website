@@ -1236,11 +1236,17 @@
  .footer-wrap {
      display: flex;
      flex-direction: row;
-     justify-content: space-between;
+     gap: 80px;
+
  }
 
  .footer-logo img {
      width: 30px;
+ }
+
+ .logo {
+     display: flex;
+     flex-direction: row;
  }
 
  .footer-wrap div {
@@ -1267,6 +1273,11 @@
 
  .social-links img {
      width: 20px;
+ }
+
+ .social-links {
+     display: flex;
+     flex-direction: row;
  }
 
  .sticky {
