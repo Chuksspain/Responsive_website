@@ -83,16 +83,15 @@
     .main-nav {
         position: absolute;
         top: 0;
-        left: 0;
-        width: 100%;
+        left: -36px;
+        right: -20px;
+        width: 100vw;
 
         height: 100vh;
         align-items: center;
         justify-content: center;
         display: flex;
-        transition: all 0.5s;
-        opacity: 0;
-        pointer-events: none;
+        transition: right 0.5s ease-out;
     }
 
     .main-nav-list {
@@ -201,6 +200,23 @@
     }
 }
 
+
+@media screen and (max-width: 720px) {
+    .menu-btn {
+        border: unset;
+        background: unset;
+        cursor: pointer;
+        display: block;
+        font-size: 35px;
+    }
+
+    .nav-open .main-nav {
+        background: #0009;
+    }
+
+
+}
+
 @media (max-width: 375px) {
 
     section,
@@ -226,11 +242,6 @@
         width: 320px;
     }
 
-    .nav-open .main-nav {
-        opacity: 1;
-        pointer-events: auto;
-        visibility: visible;
-    }
 
     .menu-btn .icon-mobile-nav[name="close-outline"] {
         display: none;

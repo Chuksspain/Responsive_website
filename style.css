@@ -47,11 +47,6 @@
      display: none;
  }
 
- .icon-mobile-nav {
-     height: 35px;
-     width: 35px;
-     color: #e67e22;
- }
 
  .icon-mobile-nav[name="close-outline"] {
      display: none;
@@ -421,7 +416,7 @@
  h1,
  h2 {
      font-size: 20px;
-     position: relative;
+     /* position: relative; */
  }
 
  h1,
